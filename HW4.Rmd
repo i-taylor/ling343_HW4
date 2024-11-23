@@ -7,20 +7,6 @@ format:
 editor: visual
 ---
 
-This homework is relatively brief in code, but also requires some GitHub skills. You are going to start with a new repository. Use the RedditExtractor packageLinks to an external site. to pull the Reddit data. This API is usually slow but relatively straightforward - it will limit how many responses you can retrieve, but we don't need a complete set, just a sample. Please choose a subreddit that has appropriate and non-offensive content ("curse words" OK, hate speech and sexual content not).
-
-1.  Create an assignment repository and publish it on GitHub. Make it private, but share it with me as a collaborator (username: lisalevinson). In that repository, create (or copy in) your R project and Quarto file.
-
-2.  Pull some posts from a subreddit - you can choose the subreddit and if you want to specify particular keywords. Use your text analysis skills to calculate and visualize the top words, excluding stopwords. I'm being deliberately a big vague about how many words - see what looks informative depending on how much you are looking at, the content, etc.
-
-3.  Save the data to RDS files so that they don't need to be pulled again each time you modify your analysis or render. After this you can comment out or set to `eval: false` the code that pulled the original data, and include instead the lines that read in the RDS files. See the code chunk examples below, and adjust for the subreddits you are using.
-
-4.  To practice working with lists, pull data on a specific user. It can be yourself if you like! Do a word frequency analysis based on their comments.
-
-5.  Render the html version of the document - this will not be visible as a webpage since your repository is private, but make sure the file exists in the repository.
-
-6.  Submit to Canvas the URL for your repository.
-
 ```{r}
 # Install packages
 # install.packages("RedditExtractoR")
